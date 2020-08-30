@@ -12,7 +12,7 @@ export const store = createStore(rootReducer,
 
 const citiesFromLocalStorage = JSON.parse((localStorage.getItem(STORAGE_KEY)))
 const initialCities = citiesFromLocalStorage && citiesFromLocalStorage.length !== 0 ? citiesFromLocalStorage : [524901, 703448, 2643743]
-const url = `http://api.openweathermap.org/data/2.5/group?id=${initialCities.join()}&units=metric&appid=${APPID}`
+const url = `https://api.openweathermap.org/data/2.5/group?id=${initialCities.join()}&units=metric&appid=${APPID}`
 store.dispatch(getWeather(url))
 
 /* Save to LocalStorage */
