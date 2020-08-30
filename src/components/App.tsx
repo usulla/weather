@@ -19,7 +19,7 @@ export const App = () => {
         <Wrapper>
           <Switch>
             <Route component={WeatherContainer} path='/' />
-            <Route children={<DailyForecastContainer/>} path="/:id" />
+            <Route children={<DailyForecastContainer/>} path="/weather-app/:id" />
           </Switch>
         </Wrapper>
       </BrowserRouter>
