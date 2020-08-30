@@ -5,7 +5,7 @@ export const createList = (newCityId) => {
     const newCitiesId = citiesFromLocalStorage.concat(newCityId)
     const url = `https://api.openweathermap.org/data/2.5/group?id=${newCitiesId.join()}&units=metric&appid=${APPID}`
     return dispatch => {
-        dispatch(getWeather(url))
+        dispatch(getWeather(url)) 
     }
 }
 
