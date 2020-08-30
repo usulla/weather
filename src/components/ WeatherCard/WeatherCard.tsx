@@ -50,7 +50,7 @@ const WeatherCard: FC<CardListProps> = (props) => {
       <CardContent>
         <Row>
           {weather.name &&
-            <Link to={`${weather.id}`} onClick={() => getDailyForecast && getDailyForecast(weather.id)}>
+            <Link to={`/${weather.id}`} onClick={() => getDailyForecast && getDailyForecast(weather.id)}>
               <Typography variant="h6" component="h2"> {weather.name}</Typography>
             </Link>
           }
