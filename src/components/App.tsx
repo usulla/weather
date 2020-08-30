@@ -18,7 +18,7 @@ export const App = () => {
       <BrowserRouter>
         <Wrapper>
           <Switch>
-            <Route component={WeatherContainer} path='/' exact />
+            <Route component={WeatherContainer} path='/' />
             <Route children={<DailyForecastContainer/>} path="/:id" />
           </Switch>
         </Wrapper>

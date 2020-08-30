@@ -9,4 +9,4 @@ export interface IPropsSearch {
 export interface T {
     name: string,
     index: string | number
-}11
+}
