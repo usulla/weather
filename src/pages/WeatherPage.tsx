@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import ListsContext from '../ListsContext'
 import WeatherCard from '../components/ WeatherCard/WeatherCard';
 import styled from 'styled-components'
 import { Loading } from 'components/Loading';
@@ -14,7 +13,7 @@ const Title = styled.h1`
 `;
 
 const WeatherPage: FC<any> = (props) => {
-    const { weather, isFetching, error, citiesSearchMatch, createList, deleteList, searchCitiesMatch } = props
+    const { weather, isFetching, error, citiesSearchMatch, createList, deleteList, searchCitiesMatch, getDailyForecast } = props
     return (
         <>
             <Title>weather</Title>
@@ -32,15 +31,10 @@ const WeatherPage: FC<any> = (props) => {
                 (weather.length !== 0) &&
                 weather.map(list => {
                     return (
-                        <ListsContext.Provider
-                            key={list.id}
-                            value={{
-                                list: list
-                            }}>
                             <WeatherCard idList={list.id}
                                 weather={list}
-                                deleteList={deleteList} />
-                        </ListsContext.Provider>
+                                deleteList={deleteList}
+                                getDailyForecast={getDailyForecast} />
                     )
                 })
             }

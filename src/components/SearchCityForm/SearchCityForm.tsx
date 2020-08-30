@@ -98,5 +98,5 @@ class SearchCityForm extends Component<IPropsSearch, IStateSearch> {
     }
 }
 
-const url = "/weather-app/json/city.list.min.json"
+const url = "/json/city.list.min.json"
 export default withFetch({ url: url })(SearchCityForm)
