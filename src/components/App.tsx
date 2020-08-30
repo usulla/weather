@@ -17,7 +17,7 @@ export const App = () => {
       <BrowserRouter>
         <Wrapper>
           <Switch>
-            <Route component={WeatherContainer} path='/' exact />
+            <Route component={WeatherContainer} path='/' />
           </Switch>
         </Wrapper>
       </BrowserRouter>
