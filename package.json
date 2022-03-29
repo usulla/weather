@@ -1,6 +1,6 @@
 {
-  "homepage": "http://usulla.github.io/weather-app",
-  "name": "my-todolist",
+  "homepage": "http://usulla.github.io/weather",
+  "name": "maria_weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
