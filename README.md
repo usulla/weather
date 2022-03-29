@@ -1,4 +1,4 @@
-App: [usulla.github.io/weather](usulla.github.io/weather)
+App: [usulla.github.io/weather](https://usulla.github.io/weather/)
 
 Создать структуру приложения погоды   
 Приложение для самостоятельной работы в блоке React - веб-приложение погоды.   
